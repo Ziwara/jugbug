@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'custom_font';
+    src: url("../fonts/DePixelKlein.ttf");
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }  
+
+body {
+    animation: fadeIn 3s;
+    background-color: #181818;
+    font-family: "custom_font" !important;
+}
+
+.main {
+    align-items: center;
+}
+
+.logo {
+    position: fixed;
+
+    max-width: 128px;
+    transform: translate(-50%, 80%);
+    margin: auto;
+    left: 50%;
+}
+
+.logo_text {
+    position: fixed;
+
+    max-width: 128px;
+    transform: translate(-50%, -10%);
+    margin: auto;
+    left: 50%;
+    bottom: 80%;
+
+    color: white;
+}
+
+.mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 600px;
+    transform: translate(0%, 45%);
+}
+.mytabs input[type="radio"] {
+    display: none;
+}
+.mytabs label {
+    transform: translate(172px, 0%);
+    background: transparent;
+    
+    text-align: center;
+
+    width: 128px;
+    height: 32px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+    z-index: 1;
+}
+
+.tab_button {
+    position: absolute;
+    max-width: 128px;
+    max-height: 32px;
+    transform: translate(-80%, 0%);
+    z-index: -1;
+}
+
+.mytabs .tab {
+    width: 100%;
+    max-width: 100%;
+
+    height: 400px;
+    max-height: 400px;
+
+    padding: 20px;
+    background: transparent;
+
+    color: white;
+
+    outline: solid;
+    outline-color: white;
+    outline-width: 2px;
+
+    overflow-y: scroll;
+
+    order: 1;
+    display: none;
+}
+
+.header {
+    margin-top: 0%;
+}
+
+.indented_list1 {
+    margin-top: 2.5%;
+    margin-left: 10%;
+    font-size: 20px;
+}
+.indented_list2 {
+    margin-top: 2.5%;
+    margin-left: 10%;
+    font-size: 16px;
+
+}
+.indented_list3 {
+    margin-top: 2.5%;
+    margin-left: 10%;
+    font-size: 14px;
+    color: aqua;
+}
+
+.mytabs .tab h2 {
+    font-size: 3em;
+}
+
+.mytabs input[type='radio']:checked + label + .tab {
+    display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+    filter: brightness(0.65);
+}
+
+.logo_text:hover {filter: brightness(0.8);}
+.mytabs label:hover {filter: brightness(0.8);}

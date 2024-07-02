@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'custom_font';
+    src: url("../fonts/DePixelKlein.ttf");
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }  
+
+body {
+    animation: fadeIn 3s;
+    background-color: #181818;
+}
+
+.main {
+    align-items: center;
+}
+
+.logo {
+    position: fixed;
+
+    max-width: 128px;
+    transform: translate(-50%, 80%);
+    margin: auto;
+    left: 50%;
+}
+
+.logo_text {
+    position: fixed;
+
+    max-width: 128px;
+    transform: translate(-50%, -10%);
+    margin: auto;
+    left: 50%;
+    bottom: 80%;
+
+    color: white;
+    font-family: "custom_font";
+}
+
+.img_background {
+    position: fixed;
+
+    max-width: 525px;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    left: 50%;
+    bottom: -100px;
+  }
+
+.button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.open_button {
+    top: 50%;
+    left: 50%;
+    transform: translate(36%, 100%);
+
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.openButton_text {
+    transform: translate(0%, 40px);
+    color: black;
+    font-size: large;
+    font-family: "custom_font";
+}
+
+.openButton_img {
+    text-align: center;
+    width: 256px;
+    height: 64px;
+    max-width: 256px;
+    max-height: 64px;
+}
+
+.open_button:hover {filter: brightness(0.8);}
+
+.button_text {
+    color: white;
+    font-family: "custom_font";
+    font-size: 16px;
+}
+.button:hover {filter: brightness(0.8);}
+
+.default_text {
+    color: white;
+    font-family: "custom_font";
+    font-size: 16px;
+}
+
+.content_bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.content_grid {
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+
+    row-gap: 84px;
+
+    transform: translate(0%, 20%);
+
+    display: grid;
+    height: 150px;
+    grid-template-columns: 150px 150px 150px;
+  }
