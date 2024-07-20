@@ -6,48 +6,46 @@
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
-  }  
+}  
 
 body {
     animation: fadeIn 3s;
     background-color: #181818;
+    margin: 0;
+    padding: 0;
+    font-family: "custom_font";
+    overflow: hidden
 }
 
 .main {
     align-items: center;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .logo {
-    position: fixed;
-
+    width: 100%;
     max-width: 128px;
-    transform: translate(-50%, 80%);
-    margin: auto;
-    left: 50%;
+    margin-bottom: 20px;
+
+    transform: translate(0%, 94px);
 }
 
 .logo_text {
-    position: fixed;
-
-    max-width: 128px;
-    transform: translate(-50%, -10%);
-    margin: auto;
-    left: 50%;
-    bottom: 80%;
-
     color: white;
     font-family: "custom_font";
+    margin-bottom: 40px;
+    z-index: 60;
 }
 
 .img_background {
-    position: fixed;
-
+    width: 100%;
     max-width: 525px;
-    transform: translate(-50%, -50%);
-    margin: auto;
-    left: 50%;
-    bottom: -100px;
-  }
+    margin: 0 auto 20px auto;
+}
 
 .button {
     background-color: transparent;
@@ -59,67 +57,95 @@ body {
 }
 
 .open_button {
-    top: 50%;
-    left: 50%;
-    transform: translate(36%, 100%);
-
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
     overflow: hidden;
     outline: none;
+    margin-top: 40px;
+    transform: translate(0%, -480px);
 }
 
 .openButton_text {
-    transform: translate(0%, 40px);
     color: black;
     font-size: large;
     font-family: "custom_font";
+    transform: translate(0%, 40px);
 }
 
 .openButton_img {
-    text-align: center;
     width: 256px;
     height: 64px;
     max-width: 256px;
     max-height: 64px;
 }
 
-.open_button:hover {filter: brightness(0.8);}
+.open_button:hover, .button:hover {
+    filter: brightness(0.8);
+}
 
 .button_text {
     color: white;
     font-family: "custom_font";
     font-size: 16px;
+    margin-top: 10px;
 }
-.button:hover {filter: brightness(0.8);}
 
 .default_text {
     color: white;
     font-family: "custom_font";
     font-size: 16px;
+    margin-top: 10px;
 }
 
 .content_bg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .content_grid {
-    justify-content: space-evenly;
-    justify-items: center;
-    align-content: space-evenly;
-    align-items: center;
-
-    row-gap: 84px;
-
-    transform: translate(0%, 20%);
-
     display: grid;
-    height: 150px;
-    grid-template-columns: 150px 150px 150px;
-  }
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+    transform: translate(0%, -480px);
+
+    row-gap: 32px;
+    grid-template-columns: repeat(3, 1fr);
+
+    width: 100%;
+    max-width: 420px;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .img_background {
+        width: 95%;
+    }
+    .content_grid {
+        grid-template-columns: repeat(3, 1fr);
+
+        transform: translate(0%, -370px);
+        
+        row-gap: 24px;
+    }
+    .button {
+        scale: 75%;
+    }
+    .logo {
+        transform: translate(0%, 94px);
+    }
+    .open_button {
+        transform: translate(0%, -420px);
+    }
+    .openButton_text {
+        transform: translate(0%, 40px);
+    }
+    body {
+        transform: translate(0%, 0%);
+    }
+}
