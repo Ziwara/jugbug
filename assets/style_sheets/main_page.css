@@ -4,133 +4,139 @@
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }  
 
 body {
-    animation: fadeIn 3s;
+    animation: fadeIn 1.5s ease-in-out;
     background-color: #181818;
     margin: 0;
     padding: 0;
-    font-family: "custom_font";
-    overflow: hidden
-    transform: translate(0%, 0%);
+    font-family: "custom_font", sans-serif;
+    min-height: 100vh;
 }
 
 .main {
-    align-items: center;
-    position: relative;
-    min-height: 100vh;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+.logo_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 .logo {
     width: 100%;
     max-width: 128px;
-    margin-bottom: 20px;
-
-    transform: translate(0%, -20px);
+    height: auto;
 }
 
 .logo_text {
     color: white;
-    font-family: "custom_font";
-    margin-bottom: 40px;
-    z-index: 60;
+    font-family: "custom_font", sans-serif;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: filter 0.2s ease;
+}
 
-    transform: translate(0%, -115px);
+.logo_text:hover {
+    filter: brightness(0.8);
 }
 
 .mytabs {
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
-
     width: 100%;
-    max-width: 525px;
-
-    height: 100%;
-    max-height: 400px;
-
-    transform: translate(0%, -100px);
-
-    margin: 0 auto 20px auto;
+    max-width: 600px;
+    margin: 0 auto;
 }
+
 .mytabs input[type="radio"] {
     display: none;
 }
+
 .mytabs label {
-    transform: translate(172px, 0%);
+    position: relative;
+    padding: 10px 20px;
     background: transparent;
-    
     text-align: center;
-
-    width: 128px;
-    height: 32px;
-
     cursor: pointer;
-
     font-weight: bold;
+    color: white;
     z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: filter 0.2s ease;
+}
+
+.mytabs label:hover {
+    filter: brightness(0.8);
 }
 
 .tab_button {
     position: absolute;
-    max-width: 128px;
-    max-height: 32px;
-    transform: translate(-80%, 0%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     z-index: -1;
+    object-fit: fill;
 }
 
 .mytabs .tab {
     width: 100%;
-    max-width: 100%;
-
     height: 400px;
-    max-height: 400px;
-
     padding: 20px;
     background: transparent;
-
     color: white;
-
-    outline: solid;
-    outline-color: white;
-    outline-width: 2px;
-
-    overflow-y: scroll;
-
+    border: 2px solid white;
+    box-sizing: border-box;
+    overflow-y: auto;
     order: 1;
     display: none;
 }
 
 .header {
-    margin-top: 0%;
+    margin-top: 0;
 }
 
-.indented_list1 {
-    margin-top: 2.5%;
-    margin-left: 10%;
-    font-size: 20px;
+.project_section {
+    margin-top: 20px;
 }
-.indented_list2 {
-    margin-top: 2.5%;
-    margin-left: 10%;
-    font-size: 16px;
 
+.project_section h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
 }
-.indented_list3 {
-    margin-top: 2.5%;
-    margin-left: 10%;
-    font-size: 14px;
+
+.project_section ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.project_section li {
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.project_link {
+    font-size: 13px;
     color: aqua;
+    text-decoration: none;
 }
 
-.mytabs .tab h2 {
-    font-size: 3em;
+.project_link:hover {
+    text-decoration: underline;
 }
 
 .mytabs input[type='radio']:checked + label + .tab {
@@ -138,61 +144,21 @@ body {
 }
 
 .mytabs input[type="radio"]:checked + label {
-    filter: brightness(0.65);
+    filter: brightness(0.7);
 }
 
-.logo_text:hover {filter: brightness(0.8);}
-.mytabs label:hover {filter: brightness(0.8);}
-
-/* Responsive Styles */
 @media (max-width: 768px) {
-    .logo {
-        transform: translate(0%, -60px);
-    }
-
-    .logo_text {
-        transform: translate(0%, -154px);
-    }
-
     .mytabs {
-        width: 80%;
-        transform: translate(0%, -100px);
+        width: 100%;
     }
 
     .mytabs label {
-        transform: translate(0%, 0%);
         width: 100%;
-        height: 40px;
-        margin-bottom: 10px;
-    }
-
-    .tab_button {
-        transform: translate(-80%, 0%);
+        margin-bottom: 5px;
     }
 
     .mytabs .tab {
-        height: auto;
-        max-height: none;
+        height: 350px;
         padding: 15px;
-    }
-
-    .header {
-        font-size: 1.5rem;
-    }
-
-    .indented_list1, .indented_list2, .indented_list3 {
-        margin-left: 5%;
-    }
-
-    .indented_list1 {
-        font-size: 1rem;
-    }
-
-    .indented_list2 {
-        font-size: 0.9rem;
-    }
-
-    .indented_list3 {
-        font-size: 0.8rem;
     }
 }
