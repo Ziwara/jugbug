@@ -17,6 +17,7 @@ body {
     min-height: 100vh;
 }
 
+/* Center all content on screen */
 .main {
     display: flex;
     flex-direction: column;
@@ -27,10 +28,12 @@ body {
     box-sizing: border-box;
 }
 
+/* Logo container stacks image above text */
 .logo_container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-decoration: none;
     margin-bottom: 20px;
 }
 
@@ -38,18 +41,18 @@ body {
     width: 100%;
     max-width: 128px;
     height: auto;
+    margin-bottom: 8px;
 }
 
 .logo_text {
     color: white;
     font-family: "custom_font", sans-serif;
-    text-decoration: none;
-    margin-top: 10px;
-    z-index: 10;
+    font-size: 16px;
+    text-align: center;
     transition: filter 0.2s ease;
 }
 
-.logo_text:hover {
+.logo_container:hover .logo_text {
     filter: brightness(0.8);
 }
 
