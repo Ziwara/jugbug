@@ -14,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "custom_font";
-    overflow: hidden;
+    overflow: hidden
     transform: translate(0%, 0%);
 }
 
@@ -65,7 +65,6 @@ body {
 .mytabs label {
     transform: translate(172px, 0%);
     background: transparent;
-    color: black; /* Tab buttons text color set to black */
     
     text-align: center;
 
