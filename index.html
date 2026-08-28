@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
     <head>
         <title>Jug Bug</title>
         <meta charset="UTF-8">
-        <meta name="description" content="I dont know">
+        <meta name="description" content="Jug Bug Games official portfolio and releases.">
         <meta name="author" content="Ziwara">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="./assets/img/tablogo.png">
@@ -12,68 +11,55 @@
     </head>
 
     <body>
-        <div class="main">
-            <img src="./assets/img/logo.png" class="logo">
-                <a class="logo_text" href="index.html" target="_self">
-                    Jug Bug Games
-                </a>
-            </img>
+        <main class="main">
+            <header class="logo_container">
+                <img src="./assets/img/logo.png" class="logo" alt="Jug Bug Logo">
+                <a class="logo_text" href="index.html">Jug Bug Games</a>
+            </header>
 
+            <div class="menu_container">
+                <img src="./assets/img/menu_bg.png" class="img_background" alt="Menu Background">
+                
+                <div class="content_bg">
+                    <div class="content_grid">
+                        <button type="button" class="button" onclick="changeTo_projectTab()">
+                            <img src="./assets/img/file_folder.gif" class="img_button" alt="Projects Folder">
+                            <div class="button_text">projects</div>
+                        </button>
 
-            <img src="./assets/img/menu_bg.png" class="img_background"></img>
-            <div class="content_bg">
-                <div class="content_grid">
+                        <button type="button" class="button" onclick="window.open('https://drive.google.com/drive/folders/1PevOpLd4db2hVfaVh5ZzLFIfyka99Zev?usp=sharing', '_blank');">
+                            <img src="./assets/img/file_folder.gif" class="img_button" alt="Game Demos Folder">
+                            <div class="default_text">game demos</div>
+                        </button>
 
-                    <button type="submit" class="button" 
-                    onclick="changeTo_projectTab()">
-                        <img src="./assets/img/file_folder.gif" class="img_button"><img/>
-                        <div class="button_text">projects</div>
+                        <button type="button" class="button" onclick="window.open('https://drive.google.com/drive/folders/1flg6h3RWiDMR1_LCXTLxZbv-0hc7GzZ6?usp=drive_link', '_blank');">
+                            <img src="./assets/img/file_folder.gif" class="img_button" alt="Releases Folder">
+                            <div class="default_text">releases</div>
+                        </button>
+
+                        <button type="button" class="button" onclick="window.open('main_page.html', '_self');">
+                            <img src="./assets/img/about.gif" class="img_button" alt="About Us">
+                            <div class="default_text">about us</div>
+                        </button>
+
+                        <button type="button" class="button" onclick="window.open('mailto:ziwaradev@gmail.com', '_self');">
+                            <img src="./assets/img/links/email.gif" class="img_button" alt="Email Contact">
+                            <div class="default_text">contact</div>
+                        </button>
+
+                        <button type="button" class="button" onclick="window.open('https://jug-bug.itch.io/', '_blank');">
+                            <img src="./assets/img/links/itchio.gif" class="img_button" alt="Itch.io Profile">
+                            <div class="default_text">itch.io</div>
+                        </button>
+                    </div>
+
+                    <button type="button" class="open_button" onclick="window.open('main_page.html', '_self');">
+                        <span class="openButton_text">main</span>
+                        <img class="openButton_img" src="./assets/img/enter_Button.png" alt="Enter Main Page">
                     </button>
-
-                    <button type="submit" class="button" onclick=
-                    "window.open('https://drive.google.com/drive/folders/1PevOpLd4db2hVfaVh5ZzLFIfyka99Zev?usp=sharing', 
-                    '_blank');">
-                        <img src="./assets/img/file_folder.gif" class="img_button"><img/>
-                        <div class="default_text" >game demos</div>
-                    </button>
-
-                    <button type="submit" class="button" onclick=
-                    "window.open('https://drive.google.com/drive/folders/1flg6h3RWiDMR1_LCXTLxZbv-0hc7GzZ6?usp=drive_link', 
-                    '_blank');">
-                        <img src="./assets/img/file_folder.gif" class="img_button"><img/>
-                        <div class="default_text" style="background-color: transparent;">releases</div>
-                    </button>
-
-                    <button type="submit" class="button" onclick=
-                    "window.open('main_page.html', 
-                    '_self');">
-                        <img src="./assets/img/about.gif" class="img_button"><img/>
-                        <div class="default_text" class="img_button">about us</div>
-                    </button>
-
-                    <button type="submit" class="button" onclick="
-                    window.open('mailto:ziwaradev@gmail.com', 
-                    '_self');">
-                        <img src="./assets/img/links/email.gif" class="img_button"><img/>
-                        <div class="default_text">contact</div>
-                    </button>
-
-                    <button type="submit" class="button" onclick=
-                    "window.open('https://jug-bug.itch.io/', 
-                    '_blank');">
-                        <img src="./assets/img/links/itchio.gif" class="img_button"><img/>
-                        <div class="default_text">itch.io</div>
-                    </button>
-
                 </div>
-                <button type="submit" class="open_button" onclick=
-                "window.open('main_page.html', 
-                '_self');">
-                    <div class="openButton_text">main</div>
-                    <img class="openButton_img" src="./assets/img/enter_Button.png"><img/>
-                </button>
             </div>
-        </div>
-    <script src="./assets/scripts/main.js" ></script>
+        </main>
+        <script src="./assets/scripts/main.js" type="module"></script>
     </body>
 </html>
