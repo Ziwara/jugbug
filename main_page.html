@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
     <head>
         <title>Jug Bug</title>
         <meta charset="UTF-8">
-        <meta name="description" content="Jug Bug Games projects and details.">
+        <meta name="description" content="I dont know">
         <meta name="author" content="Ziwara">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="./assets/img/tablogo.png">
@@ -11,98 +12,112 @@
     </head>
 
     <body>
-        <main class="main">
-            <!-- Logo directly on top of text -->
-            <a href="index.html" class="logo_container">
-                <img src="./assets/img/logo.png" class="logo" alt="Jug Bug Logo">
-                <span class="logo_text">Jug Bug Games</span>
-            </a>
+        <div class="main">
+            <img src="./assets/img/logo.png" class="logo">
+                <a class="logo_text" href="index.html" target="_self">
+                    Jug Bug Games
+                </a>
+            </img>
         
             <div class="mytabs">
-                <input type="radio" id="tab_about" name="mytabs" checked>
-                <label for="tab_about">
-                    About Us
-                    <img src="./assets/img/tab_button.png" class="tab_button" alt="">
+                <input type="radio" id="tab_about" name="mytabs" checked="checked">
+                <label for="tab_about">About Us
+                    <img src="./assets/img/tab_button.png" class="tab_button"></img>
                 </label>
                 <div class="tab">
-                    <h2 class="header">About Jug Bug</h2>
-                    <p>Developer doing what he does best, building games.</p>
+                <h3 class="header">About Jug Bug</h3>
+                <p>Stupid ahh dev doing what he does best, just being himself.</p>
                 </div>
             
                 <input type="radio" id="tab_projects" name="mytabs">
-                <label for="tab_projects">
-                    Projects
-                    <img src="./assets/img/tab_button.png" class="tab_button" alt="">
+                <label for="tab_projects">Projects
+                    <img src="./assets/img/tab_button.png" class="tab_button"></img>
                 </label>
                 
                 <div class="tab">
-                    <h2 class="header">Current Projects</h2>
+                <h3 class="header">Current Projects</h3>
 
-                    <section class="project_section">
-                        <h3>Completed:</h3>
-                        <ul>
-                            <li>
-                                Click ME
-                                <br>
-                                <a class="project_link" href="https://drive.google.com/file/d/10TcDHGvFv8YjFgWNXV1eJe3vCGdW5nwv/view?usp=drive_link" target="_blank" rel="noopener">
-                                    Android Release
-                                </a>
-                            </li>
-                            <li>
-                                Pursuit (formerly Project L)
-                                <br> 
-                                <a class="project_link" href="https://jug-bug.itch.io/pursuit" target="_blank" rel="noopener">
-                                    Itch.io Release
-                                </a>
-                            </li>
-                        </ul>
-                    </section>
-
-                    <section class="project_section">
-                        <h3>In Progress:</h3>
-                        <ul>
-                            <li>AcadZ</li>
-                            <li>
-                                SlayM Lite
-                                <br>
-                                <a class="project_link" href="https://drive.google.com/file/d/15MIo00dOFubAkovSi3uboRduYJM059jy/view?usp=drive_link" target="_blank" rel="noopener">
-                                    DEMO 1 Version Android [0.1]
-                                </a>
-                            </li>
-                        </ul>
-                    </section>
-                    
-                    <section class="project_section">
-                        <h3>Discontinued:</h3>
-                        <ul>
-                            <li>Aichmophobia</li>
-                            <li>Dead Red</li>
-                            <li>Forthleap</li>
-                            <li>Project Cultivate</li>
-                            <li>Project Destiny</li>
-                            <li>Project H</li>
-                            <li>
-                                Serendipity (formerly Summer Days)
-                                <br>
-                                <a class="project_link" href="https://drive.google.com/file/d/1ar0n5pLC1r8y9KTeEzMtKdACiVUlfIe_/view?usp=sharing" target="_blank" rel="noopener">DEMO 1 Version [0.1]</a><br>
-                                <a class="project_link" href="https://drive.google.com/file/d/10ILede1Xf8XHL5skvjL9OTFlEKAg2AwH/view?usp=sharing" target="_blank" rel="noopener">DEMO 2 Version Windows [0.12]</a><br>
-                                <a class="project_link" href="https://drive.google.com/file/d/1ipI5DiqFMJtJ69Kl2ZvvsyvSPZxQKssi/view?usp=sharing" target="_blank" rel="noopener">DEMO 2 Version Android [0.12]</a>
-                            </li>
-                            <li>
-                                SlayM
-                                <br>
-                                <a class="project_link" href="https://drive.google.com/file/d/1VSeDcQpw9Ieynubv94Dxi5V--t9qGbTv/view?usp=sharing" target="_blank" rel="noopener">DEMO 1 Version [0.0.1]</a><br>
-                                <a class="project_link" href="https://drive.google.com/file/d/1KlhHjjs6ogCkV_rC8DJM3Y8S5Z58Khcj/view?usp=sharing" target="_blank" rel="noopener">DEMO 2 Version [0.0.12]</a><br>
-                                <a class="project_link" href="https://drive.google.com/file/d/1aMRBDbPnTDyHFreNdg0LoQbedRa54RLr/view?usp=sharing" target="_blank" rel="noopener">DEMO 3 Version [0.0.13]</a><br>
-                                <a class="project_link" href="https://drive.google.com/file/d/1iPovvQ0W2TL81i2wRHJEdhy_qHQgN8cO/view?usp=drive_link" target="_blank" rel="noopener">DEMO 3.1 Version (unstable) [0.0.131]</a><br>
-                                <a class="project_link" href="https://drive.google.com/file/d/1IngoWKD5DjVW2WhJFn554eRYy63xwdZB/view?usp=drive_link" target="_blank" rel="noopener">DEMO 4 Version [0.0.14]</a>
-                            </li>
-                        </ul>
-                    </section>
+                <div class="indented_list1">Completed:
+                    <li class="indented_list2">Click ME
+                        <br>
+                        <a class="indented_list3" href="https://drive.google.com/file/d/10TcDHGvFv8YjFgWNXV1eJe3vCGdW5nwv/view?usp=drive_link">
+                            Android Release
+                        </a>
+                    </li>
+                    <li class="indented_list2">Pursuit (formerly Project L)
+                        <br> 
+                        <a class="indented_list3" href="https://jug-bug.itch.io/pursuit">
+                            Itch.io Release
+                        </a>
+                    </li>
                 </div>
-            </div>
-        </main>
 
-        <script src="./assets/scripts/main.js" type="module"></script>
+                <div class="indented_list1">In Progress:
+                     <li class="indented_list2">AcadZ</li>
+                     <li class="indented_list2">SlayM Lite
+                         <br>
+                         <a class="indented_list3" href="https://drive.google.com/file/d/15MIo00dOFubAkovSi3uboRduYJM059jy/view?usp=drive_link">
+                            DEMO 1 Version Android [0.1]
+                         </a>
+                    </li>
+                    
+                </div>
+                    
+                <div class="indented_list1">Discontinued:
+                    <li class="indented_list2">Aichmophobia</li>
+                    <li class="indented_list2">Dead Red</li>
+                    <li class="indented_list2">Forthleap</li>
+                    <li class="indented_list2">Project Cultivate</li>
+                    <li class="indented_list2">Project Destiny</li>
+                    <li class="indented_list2">Project H</li>
+                    <li class="indented_list2">Serendipity (formerly Summer Days)
+                        <br>
+                        <a class="indented_list3" href="https://drive.google.com/file/d/1ar0n5pLC1r8y9KTeEzMtKdACiVUlfIe_/view?usp=sharing">
+                            DEMO 1 Version [0.1]
+                        </a>
+                        <br>
+                        <a class="indented_list3" href="https://drive.google.com/file/d/10ILede1Xf8XHL5skvjL9OTFlEKAg2AwH/view?usp=sharing">
+                            DEMO 2 Version Windows [0.12]
+                        </a>
+                        <br>
+                        <a class="indented_list3" href="https://drive.google.com/file/d/1ipI5DiqFMJtJ69Kl2ZvvsyvSPZxQKssi/view?usp=sharing">
+                            DEMO 2 Version Android [0.12]
+                        </a>
+                        <br>
+                    </li>
+                    <li class="indented_list2">SlayM
+                        <br>
+                        <a class="indented_list3" href="https://drive.google.com/file/d/1VSeDcQpw9Ieynubv94Dxi5V--t9qGbTv/view?usp=sharing">
+                            DEMO 1 Version [0.0.1]
+                        </a>
+                        <br>
+                        <a class="indented_list3" href="https://drive.google.com/file/d/1KlhHjjs6ogCkV_rC8DJM3Y8S5Z58Khcj/view?usp=sharing">
+                            DEMO 2 Version [0.0.12]
+                        </a>
+                        <br>
+                        <a class="indented_list3" href="https://drive.google.com/file/d/1aMRBDbPnTDyHFreNdg0LoQbedRa54RLr/view?usp=sharing">
+                            DEMO 3 Version [0.0.13]
+                        </a>
+                        <br>
+                        <a class="indented_list3" href="https://drive.google.com/file/d/1iPovvQ0W2TL81i2wRHJEdhy_qHQgN8cO/view?usp=drive_link">
+                            DEMO 3.1 Version (unstable, bad) [0.0.131]
+                        </a>
+                        <br>
+                        <a class="indented_list3" href="https://drive.google.com/file/d/1IngoWKD5DjVW2WhJFn554eRYy63xwdZB/view?usp=drive_link">
+                            DEMO 4 Version [0.0.14]
+                        </a>
+                </div>
+                </div>
+
+                </div>
+            
+            </div>
+    <script src="./assets/scripts/main.js" type="module"></script>></script>
+    <script type="module">
+        import{ projectButton_pressed } from './assets/scripts/main.js';
+        if (projectButton_pressed) {
+            console.log("yeah")
+        }
+    </script>
     </body>
 </html>
